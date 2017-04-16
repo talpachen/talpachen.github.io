@@ -7,6 +7,10 @@ node_js: stable
 install:
 - npm install
 
+script:
+  - hexo cl  #Çå³ý
+  - hexo g  #Éú³É
+
 after_script:
   - cd ./public
   - git init
