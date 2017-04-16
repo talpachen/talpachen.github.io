@@ -2,29 +2,24 @@ language: node_js
 
 node_js: stable
 
-#before_install:
+before_install:
+  - openssl aes-256-cbc -K $encrypted_3668b259ddc5_key -iv $encrypted_3668b259ddc5_iv -in travis_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - git config --global user.name "talpachen"
+  - git config --global user.email "talpachen@gmail.com"
 
 install:
-- npm install
+  - npm install
 
 script:
-  - hexo cl  #清除
-  - hexo g  #生成
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "talpachen"  #修改name
-  - git config user.email "talpachen@gmail.com"  #修改email
-  - git add .
-  - git commit -m "update"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master  #GH_TOKEN是在Travis中配置token的名称
+  - hexo clean
+  - hexo generate
+  - hexo deploy
 
 branches:
   only:
     - hexo  #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
 
-env:
- global:
-   - GH_REF: github.com/talpachen/talpachen.github.io.git  #设置GH_REF，注意更改yourname
 
