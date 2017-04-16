@@ -71,5 +71,5 @@ deploy:
   type: git
   message: ""
   repo:
-    github: https://github.com/talpachen/talpachen.github.io.git,master
+    github: git@github.com:talpachen/talpachen.github.io.git,master
 
