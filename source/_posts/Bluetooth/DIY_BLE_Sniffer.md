@@ -18,7 +18,7 @@ tags: [Bluetooth]
 下面是软件部分，官方提供了PC软件和MCU执行文件[nRF-Sniffer](https://www.nordicsemi.com/eng/nordic/download_resource/38647/15/59410351/39099)，在Firmware文件夹下有一个`ble-sniffer_nRF51822_1.0.1_1111_Sniffer.hex`文件。想必是sniffer的固件了。
 
 ### 硬件准备
-网上瘦了下，可以用ST-Link V2-1 + Openocd的办法搞定，按下图连好：
+网上搜了下，可以用ST-Link V2-1 + Openocd的办法搞定，按下图连好：
 ![](DIY_BLE_Sniffer/swdio.png) *此图在ST-Link端连接有错误，不过标注是正确的*
 
 ### 固件烧写
@@ -34,3 +34,11 @@ ST-LinkV2-1上没有流控口，所以我先把模块上的CTS强制拉低，先
 ![](DIY_BLE_Sniffer/keyboard.png)
 按数字键选择该设备，按下w，即可启动Wireshark。*关于Wireshark，建议使用1.10.14 [x64下载地址](https://www.wireshark.org/download/win64/all-versions/Wireshark-win64-1.10.14.exe) 最新版本有问题，其他版本不清楚*
 ![](DIY_BLE_Sniffer/wireshark.png)
+
+### 后续
+要去买一个支持流控的USB串口工具，另外期望USB-KW41Z也可以这样DIY出来，毕竟比nRF51822强大多了。
+
+### 参考
+1. http://www.weixinnu.com/tag/article/2927537612
+2. https://devzone.nordicsemi.com/question/79845/nrf-sniffer-support-for-wireshark-v203/
+3. https://devzone.nordicsemi.com/question/14761/programming-nrf51822-using-swd/
