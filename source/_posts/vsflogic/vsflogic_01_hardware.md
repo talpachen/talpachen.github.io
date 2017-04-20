@@ -6,7 +6,7 @@ tags: [VSFLogic]
 
 # 硬件简单介绍
 NXP官方有一块LabTool扩展板，同样是配合LPC-Link2使用的，可惜价格感人，近1k人民币。这块自制板子成本控制在100以内，相比LabTool少了函数发生器的功能，其他没什么差别。
-
+<!-- more -->
 # 启动模式
 ![](vsflogic_01_hardware/lpclink2.png)
 1. JP1短接时，单片机从SPI Flash启动

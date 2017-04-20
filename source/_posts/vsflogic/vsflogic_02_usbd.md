@@ -3,7 +3,7 @@ title: VSFLogic实现（二）：USB Device
 date: 2016-07-11 17:13:03
 tags: [VSFLogic, USB]
 ---
-
+<!-- more -->
 # 应用层功能
 ### 高速数据通道
 分配端点：BULK IN 1、BULK OUT 1

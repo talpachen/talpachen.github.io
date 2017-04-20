@@ -3,7 +3,7 @@ title: VSFLogic实现（四）：SGPIO
 date: 2016-9-29 07:18:34
 tags: [VSFLogic]
 ---
-
+<!-- more -->
 # 外设特点
 1. 串行到并行与并行到串行的输入、输出功能
 2. 内部双缓冲

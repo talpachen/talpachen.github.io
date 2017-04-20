@@ -5,7 +5,7 @@ tags: [Linux]
 ---
 
 *软硬件平台：Beaglebone Black Ver.B + [BBB-blank-debian-8.6-console-armhf-2016-11-06-2gb](https://rcn-ee.com/rootfs/bb.org/testing/2016-11-06/console/BBB-blank-debian-8.6-console-armhf-2016-11-06-2gb.img.xz)*
-
+<!-- more -->
 # 使能I2C-1
 在BBB中，默认只能用I2C-0和I2C-2，使用以下命令使能I2C-1
 

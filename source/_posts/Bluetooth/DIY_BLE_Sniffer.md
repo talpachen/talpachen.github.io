@@ -6,9 +6,7 @@ tags: [Bluetooth]
 ### 为什么要DIY抓包器
 [KW41Z活动](http://www.eeworld.com.cn/huodong/201611_NXPKW41ZActivity1/index.html) 正搞得如火如荼，大量小伙伴即将拿到FRDM-KW41Z开发套件，不过貌似这次活动不提供USB-KW41Z，抓包器类似于逻辑分析仪，当你要用它时，往往能起到事半功倍的作用。
 *关于USB-KW41Z的细节，可以看官方教程 [Get Started with USB-KW41Z](http://www.nxp.com/products/microcontrollers-and-processors/more-processors/application-specific-mcus-mpus/bluetooth-low-energy-ble/bluetooth-low-energy-ieee-802.15.4-packet-sniffer-usb-dongle:USB-KW41Z?tab=In-Depth_Tab)*
-
 <!-- more -->
-
 据我所知，目前比较火的BLE廉价抓包方案有nRF51822和CC2540，51822主要配合wireshark使用，CC2540要配合TI软件，功能有一定差异，二者淘宝上都有卖，几十块钱（寨版）。因为我手上还有两块nRF51822的模块，就想着把这个模块改成Sniffer，毕竟凡人皆可山寨。有钱人就不用往下看了，下面的事情都可以花钱搞定。
 
 ### 评估

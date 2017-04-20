@@ -5,7 +5,7 @@ tags: [VSFLogic]
 ---
 
 *本文为思路笔记，并不能完整描述最终实现方案*
-
+<!-- more -->
 # USB类：VSFLOGIC
 1. 控制通道
 在USBD中增加一个自定义类，在端点0上提供GET/SET Interface接口，主机用这个接口查询设备信息，发送参数、命令等。
