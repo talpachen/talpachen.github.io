@@ -12,6 +12,7 @@ before_install:
 
 install:
   - npm install
+  - npm install hexo-generator-searchdb --save
 
 script:
   - hexo clean
@@ -20,6 +21,4 @@ script:
 
 branches:
   only:
-    - hexo  #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
-
-
+    - hexo  #只锟斤拷锟斤拷hexo锟斤拷支锟斤拷hexo锟斤拷锟揭的凤拷支锟斤拷锟斤拷锟狡ｏ拷锟缴革拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷
