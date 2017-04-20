@@ -293,8 +293,8 @@ mathjax:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: talpachen
   count: true
 
 # Hypercomments
@@ -475,8 +475,6 @@ fancybox: true
 
 # Canvas-nest
 canvas_nest: false
-
-disqus_shortname: talpachen
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.

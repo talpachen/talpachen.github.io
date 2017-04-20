@@ -65,8 +65,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: hexo
 
-disqus_shortname: talpachen
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
