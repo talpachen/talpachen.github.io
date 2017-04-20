@@ -7,7 +7,7 @@ title: 梦蝶
 subtitle:
 description:
 author: TalpaChen
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material
+theme: hexo
+
+disqus_shortname: talpachen
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
