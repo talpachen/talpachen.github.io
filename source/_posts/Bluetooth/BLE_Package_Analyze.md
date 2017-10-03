@@ -1,4 +1,4 @@
----
+﻿---
 title: BLE抓包全程分析——针对FRDM-KW41Z板官方hid_device例程
 date: 2017-4-29 16:17:28
 tags: [Bluetooth]
@@ -11,7 +11,7 @@ tags: [Bluetooth]
 - SDK：MKW41Z_ConnSw_1.0.2 [hid_device]
 - 安卓手机：CM12.1，支持BLE
 - Sniffer：nRF51822 + USB串口
-
+<!-- more -->
 # 流程
 1. FRDM-KW41Z上调试运行hid_device例程（部分参数被修改），按一下SW4，开始广播
 2. 启动ble-sniffer_win_1.0.1_1111_Sniffer.exe，选中FSL_HID，然后输入Passkey：999999

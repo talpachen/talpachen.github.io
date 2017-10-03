@@ -1,4 +1,4 @@
----
+﻿---
 title: Sigrok 编译环境
 date: 2017-4-25 15:51:21
 tags: [VSFLogic, Sigrok]
@@ -62,8 +62,7 @@ tags: [VSFLogic, Sigrok]
 - `cd mxe-git`
 - `git checkout fcbe7e30651b5c3be0cbd95541308cd5cbe393f7`
 *注意，该版本使用QT5.7.1。截止2017-4-27，PulseView配合QT5.8编译会产生一些链接问题*
-- `cp ../sigrok-util/cross-compile/mingw/*.patch ./`
-- `cp ../sigrok-util/cross-compile/mingw/sigrok-cross-mingw ./`
+- `cp ../sigrok-util/cross-compile/mingw/* ./`
 - `patch -p1 < ./mxe_fixes.patch`
 - `make MXE_TARGETS=i686-w64-mingw32.static.posix gcc glib libzip libusb1 libftdi1 glibmm qt5 boost check`
 - `./sigrok-cross-mingw`
