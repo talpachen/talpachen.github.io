@@ -1,4 +1,4 @@
----
+﻿---
 title: 利用nRF51822模块制作BLE抓包器
 date: 2017-4-17 14:36:42
 tags: [Bluetooth]
@@ -13,7 +13,7 @@ tags: [Bluetooth]
 先翻下官方的原理图，[nRF51 Dongle](https://www.nordicsemi.com/eng/Products/nRF51-Dongle/) 是这个样子的：
 ![](DIY_BLE_Sniffer/s1.png)
 ![](DIY_BLE_Sniffer/s2.png)
-第二个芯片只是实现USB转USART的功能，看来硬件很容易处理。[PDF原理图下载](PCA10031_Schematic_And_PCB.pdf)
+第二个芯片只是实现USB转USART的功能，看来硬件很容易处理。 [PDF原理图下载](PCA10031_Schematic_And_PCB.pdf)
 
 下面是软件部分，官方提供了PC软件和MCU执行文件[nRF-Sniffer](https://www.nordicsemi.com/eng/nordic/download_resource/38647/15/59410351/39099)，在Firmware文件夹下有一个`ble-sniffer_nRF51822_1.0.1_1111_Sniffer.hex`文件。想必是sniffer的固件了。
 
